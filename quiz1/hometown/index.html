@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 : Kresna</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                KresnaAP
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" style="z-index: 1;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile/index.html">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../hometown/index.html">Hometown <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../food/index.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tourist/index.html">Tourist</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Content -->
+    <div class="container-fluid" style="background-color: #393939;">
+        <div class="row">
+            <div class="container-fluid text-center text-md-left mt-5 mb-1">
+                <div class="row">
+                    <div class="col-md-12 mt-md-0 mt-3 d-flex justify-content-center">
+                        <img src="../assets/img/logo/home.png" height="30px" height="30px" alt="logo">
+                    </div>
+                </div>
+            </div>
+        
+            <div class="container-fluid mt-3 mb-5">
+                <div class="row">
+                    <div class="col-md-6 mt-md-0 mt-3 mb-5 d-flex justify-content-center">
+                        <div class="col-md-10 d-flex justify-content-center align-items-center">
+                            <img src="../assets/img/header.jpg" class="rounded" width="80%" alt="city">
+                        </div>
+                    </div>
+        
+                    <div class="col-md-6 mb-md-0 mt-3 mb-5 d-flex justify-content-center">
+                        <div class="col-md-10">
+                            <h1 class="text-white">Surabaya</h1>
+                            <h3 class="text-warning">City of Heroes</h3>
+                            <p class="text-white">
+                                Surabaya, the second largest city in Indonesia, is the capital of East Java. 
+                                The meaning of Surabaya is combination of sura meaning shark and baya meaning 
+                                crocodile. There are about 3 million people living in Surabaya and they speak 
+                                a dialect of Javanese called Suroboyoan. Surabaya is the second largest city in 
+                                Indonesia after Jakarta. Surabaya is located on the edge of the northern coast 
+                                of Java Island and dealing with the Madura Strait and Java Sea.
+                            </p>
+                            <p class="text-white">
+                                Surabaya is not only the second largest city in Indonesia but it is known as the 
+                                “city of heroes” because of the role it played in the Battle of Surabaya in 
+                                November 10, 1945. Surabaya has a heroes monument called Tugu Pahlawan. It is the symbol of 
+                                Surabaya and is built to respect the heroes who fought for independence. This 
+                                rocket-like monument points towards the moon 41.15 meters high. Along with the monument, 
+                                there is a museum where diorama of Surabaya in 1945 is displayed. History of Surabaya 
+                                at that time could be seen through pictures, clips, and stories. There are other buildings 
+                                surrounding the monument to depict the struggles Indonesians had to go through.
+                            </p>
+                            <p class="text-white">
+                                Not only these monuments, there are still many historical monuments that represents and shows 
+                                the history of Surabaya. Apart from historical relics, there are still good foods and 
+                                good places in Surabaya. If you are interested in knowing more, you can visit Surabaya's official 
+                                website by pressing the button below.
+                            </p>
+                            <a href="https://www.surabaya.go.id/" target="_blank" class="btn btn-warning btn-sm px-3">VISIT WEBSITE</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Destination -->
+    <div class="container-fluid text-center text-md-left mt-5 mb-3">
+        <div class="row">
+            <div class="col-md-12 mt-md-0 mt-3 d-flex justify-content-center">
+                <div class="col-md-0">
+                    <img src="../assets/img/logo/map.png" height="30px" height="30px" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h3>GREAT PLACES</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- Gallery -->
+    <div class="container-fluid text-center text-md-left my-5">
+        <div class="row justify-content-center">
+            <div class="col-md-8">
+                <div class="gallery" id="gallery">
+                    <div class="mb-3">
+                        <a href="../tourist/index.html"><img class="img-fluid" src="../assets/img/hometown/5.png" alt="Card image cap"></a>
+                    </div>
+                
+                    <div class="mb-3">
+                        <a href="../tourist/index.html"><img class="img-fluid" src="../assets/img/hometown/2.png" alt="Card image cap"></a>
+                    </div>
+                
+                    <div class="mb-3">
+                        <a href="../tourist/index.html"><img class="img-fluid" src="../assets/img/hometown/4.png" alt="Card image cap"></a>
+                    </div>
+                
+                    <div class="mb-3">
+                        <a href="../tourist/index.html"><img class="img-fluid" src="../assets/img/hometown/6.png" alt="Card image cap"></a>
+                    </div>
+                
+                    <div class="mb-3">
+                        <a href="../tourist/index.html"><img class="img-fluid" src="../assets/img/hometown/1.png" alt="Card image cap"></a>
+                    </div>
+                
+                    <div class="mb-3">
+                        <a href="../tourist/index.html"><img class="img-fluid" src="../assets/img/hometown/3.png" alt="Card image cap"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+    
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <img src="../assets/img/logo/check.png" alt="store" width="30" height="30">
+                        <h3>KresnaAP</h3>
+                        <p>
+                            The best way to know everything about Surabaya.
+                        </p>
+                        <p>
+                            +62 812 3020 0808<br>
+                            kresnaadhipramana5758@gmail.com
+                        </p>
+
+                        <form action="">
+                            <div class="input-group py-3">
+                                <input type="text" class="form-control col-md-5" id="emailAddress" placeholder="Email@example.com">
+                                <div class="input-group-append">
+                                    <a href="#" class="input-group-text bg-dark" style="text-decoration: none;"><i class="far fa-envelope" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-6 mb-md-0 mb-3 d-flex justify-content-center">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 mt-5 text-white" style="background-color: black;">
+            © 2020 Copyright:
+            <a href="../index.html" class="text-white"> KresnaAP</a>
+        </div>
+    </footer>
+      
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Maps -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="../assets/js/map-settings.js"></script>
+</body>
+</html>

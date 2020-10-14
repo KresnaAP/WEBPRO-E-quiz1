@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 : Kresna</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="../assets/favicon.ico" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+            <a class="navbar-brand" href="../index.html">
+                <img src="../assets/img/logo/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                KresnaAP
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" style="z-index: 1;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../profile/index.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../hometown/index.html">Hometown</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="../food/index.html">Food <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../tourist/index.html">Tourist</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container-fluid text-center text-md-left mt-5 mb-1">
+        <div class="row">
+            <div class="col-md-12 mt-md-0 mt-3 d-flex justify-content-center">
+                <img src="../assets/img/logo/food.png" height="30px" height="30px" alt="logo">
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-3 mb-3">
+        <div class="row">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <p>These are <b>local foods</b> you need to try in <b>Surabaya</b>.</p> 
+            </div>
+        </div>
+
+        <div class="row mb-1" id="rujak">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <h3>Rujak Cingur</h3>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <img src="../assets/img/food/rujak.png" id="foodphoto" alt="rujak">
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-6 mt-3">
+                <p>
+                    Rujak cingur is one of many versions of Indonesian rujak, a fruit salad which 
+                    consists of different tropical fruits, usually served with a spicy and sweet 
+                    dressing. Rujak cingur is a unique variety, because apart from fruits, it also 
+                    incorporates vegetables and a rare ingredient – animal muzzle. <br><br>
+
+                    Traditionally, beef or buffalo muzzle is used in rujak cingur, while fruits and 
+                     are served boiled or raw. The dish is assembled and covered with generous amounts 
+                     of spicy Indonesian dressing made with shrimp paste, peanuts, sugar, and chili. <br><br>
+
+                    It is traditionally served on banana leaves and garnished with prawn crackers. 
+                    Rice cakes, rice crackers, tofu, or tempeh are usually served as side dishes. 
+                    Invented in East Java, this unusual dish can easily be found in the entire region, 
+                    and it is especially popular in the region’s capital, Surabaya.
+                </p>
+            </div>
+        </div>
+
+        <hr class="w-75">
+
+        <div class="row mb-1" id="lontong">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <h3>Lontong Balap</h3>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <img src="../assets/img/food/lontong.png" id="foodphoto" alt="lontong">
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-6 mt-3">
+                <p>
+                    Lontong Balap is a traditional food from Surabaya. It has a unique name, 
+                    which is lontong (compressed rice cake) and balap (race). So does it means 
+                    the lontong is having a race or the seller is racing when serving the customers? <br><br>
+
+                    Lontong balap as its name consists of lontong it self, bean sprouts, fried tofu, 
+                    and a soup base which has been seasoned with a shrimp paste.  <br><br>
+
+                    According to wikipedia, the story behind the Lontong Balap Name is about those 
+                    lontong balap man who at that time were still walking and carrying the food on 
+                    a bamboo baskets and hung them on their shoulder, they were rush to walk to their 
+                    post near the Wonokromo market in order to meet their customers. <br><br>
+
+                    Nowadays, there are still lots of lontong balap man in Surabaya, the amount is growing 
+                    and growing every year following the population growth in Surabaya itself. Some of them 
+                    even still bring it on bycycle. So, don't forget to try the lontong balap when you visit Surabaya.
+                </p>
+            </div>
+        </div>
+
+        <hr class="w-75">
+
+        <div class="row mb-1" id="tahu">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <h3>Tahu Campur</h3>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <img src="../assets/img/food/tahu.png" id="foodphoto" alt="tahu">
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-6 mt-3">
+                <p>
+                    Tahu campur, literally meaning "mixed tofu" in Javanese language and broader 
+                    Indonesian language, is an East Javanese tofu dish. The dish consists of sliced 
+                    tahu goreng (fried tofu), lontong (rice cakes), lentho (fried black-eyed pea patty) 
+                    or sometimes replaced by perkedel (potato or cassava patty cakes), fresh bean sprouts, 
+                    fresh lettuce, yellow noodles, and krupuk crackers, served in savoury beef stew, 
+                    garnished with fried onions, and sambal chili sauce. The beef stew soup is seasoned 
+                    with spices and petis, a type of shrimp paste commonly used in East Javanese cuisine. <br><br>
+
+                    The dish is associated with Surabaya metropolitan area (Gerbangkertosusila), which includes 
+                    Surabaya, Lamongan, Gresik, and Sidoarjo. This dish is commonly sold by street vendors in 
+                    major Indonesian cities, especially in Java, with the tarp tent shop or warung usually called 
+                    their establishments as "Tahu Campur Lamongan".
+                </p>
+            </div>
+        </div>
+
+        <hr class="w-75">
+
+        <div class="row mb-1" id="rawon">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <h3>Rawon Setan</h3>
+            </div>
+        </div>
+        <div class="row mb-1">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <img src="../assets/img/food/rawon.png" id="foodphoto" alt="rawon">
+            </div>
+        </div>
+        <div class="row mb-3 justify-content-center">
+            <div class="col-md-6 mt-3">
+                <p>
+                    Rawon is an Indonesian beef soup. Originating from Surabaya, East Java, 
+                    rawon utilizes the black keluak nut as the main seasoning, which gives a dark 
+                    color and nutty flavor to the soup. <br><br>
+
+                    The soup is composed of a ground mixture of garlic, shallots, keluak, ginger, 
+                    candlenut, turmeric, red chili, and salt, and is sautéed with oil. The sautéed mixture 
+                    is then poured into boiled beef stock with diced beef slices. Lemongrass, galangal, 
+                    bay leaves, kaffir lime leaves, and sugar are then added as seasonings. The special dark 
+                    or black color of rawon comes from the keluak as the main spice. The soup is usually 
+                    garnished with green onion and fried shallot, and served with rice. Other toppings include 
+                    bean sprouts, salted preserved egg, krupuk, and fried tolo beans (black-eyed pea). <br><br>
+
+                    Rawon is one of the oldest historically identified dishes of ancient Java. It was 
+                    mentioned as rarawwan in an ancient Javanese Taji inscription (901 CE) from the era 
+                    of the Mataram Kingdom. <br><br>
+
+                    There are several variants of rawon, with the most popular being rawon from Surabaya. 
+                    A version called rawon setan ("devil's rawon") is sold as a late-night meal at Indonesian 
+                    food stalls open from midnight to dawn, supposedly the hours during which devils roam.
+                </p>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col-md-12 mt-3 d-flex justify-content-center">
+                <p>Source: <a href="https://www.tripzilla.id/makanan-khas-surabaya/4630" target="_blank">Website</a></p> 
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <img src="../assets/img/logo/check.png" alt="store" width="30" height="30">
+                        <h3>KresnaAP</h3>
+                        <p>
+                            The best way to know everything about Surabaya.
+                        </p>
+                        <p>
+                            +62 812 3020 0808<br>
+                            kresnaadhipramana5758@gmail.com
+                        </p>
+
+                        <form action="">
+                            <div class="input-group py-3">
+                                <input type="text" class="form-control col-md-5" id="emailAddress" placeholder="Email@example.com">
+                                <div class="input-group-append">
+                                    <a href="#" class="input-group-text bg-dark" style="text-decoration: none;"><i class="far fa-envelope" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <hr class="clearfix w-100 d-md-none pb-3">
+
+                <div class="col-md-6 mb-md-0 mb-3 d-flex justify-content-center">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 mt-5 text-white" style="background-color: black;">
+            © 2020 Copyright:
+            <a href="../index.html" class="text-white"> KresnaAP</a>
+        </div>
+    </footer>
+      
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Maps -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="../assets/js/map-settings.js"></script>
+</body>
+</html>

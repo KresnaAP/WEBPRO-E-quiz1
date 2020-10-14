@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 : KresnaAP</title>
+
+    <!-- Icon -->
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon"/>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"/>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: transparent;">
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/img/logo/logo.png" width="30" height="30" class="d-inline-block align-top" alt="logo">
+                KresnaAP
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" style="z-index: 1;" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="profile/index.html">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="hometown/index.html">Hometown</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="food/index.html">Food</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="tourist/index.html">Tourist</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Profile -->
+    <div class="container-fluid my-5">
+        <div class="row mt-5 mb-3">
+            <div class="col text-center">
+                <h1>INTRODUCTION</h1>
+            </div>
+        </div>
+
+        <div class="row mb-3">
+            <div class="col text-center">
+                <img src="assets/img/pasphoto.png" class="rounded-lg" width="160vw" alt="pasphoto"> 
+            </div>
+        </div>
+
+        <div class="row mb-5">
+            <div class="col mb-3 text-center">
+                <h5>Hello, there!</h5>
+                <h4 class="text-warning">Nice to meet you.</h4>
+                <p>
+                    Thank you for visiting my website. I hope you enjoy it.
+                </p>
+                <a href="profile/index.html" class="btn btn-warning btn-sm px-3">ABOUT ME</a>
+            </div>
+        </div>
+    </div>
+    
+    <hr class="w-75">
+    
+    <!-- Hometown -->
+    <div class="container-fluid text-center text-md-left mt-5 mb-3">
+        <div class="row">
+            <div class="col-md-12 mt-md-0 mt-3 d-flex justify-content-center">
+                <div class="col-md-0">
+                    <img src="assets/img/logo/homeblack.png" height="30px" height="30px" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h3>HOMETOWN</h3>
+            </div>
+        </div>
+
+        <div class="randomizer">
+            <div class="random-cont">
+                <h1>
+                    <span class="txt-type" data-wait="3000" data-words='["Surabaya", "City of Heroes"]'></span>
+                </h1>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-2 text-center my-5">
+                <a href="hometown/index.html" class="btn btn-warning btn-sm px-3">MORE →</a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="w-75">
+
+    <!-- Food -->
+    <div class="container-fluid text-center text-md-left mt-5 mb-3">
+        <div class="row">
+            <div class="col-md-12 mt-md-0 mt-3 d-flex justify-content-center">
+                <div class="col-md-0">
+                    <img src="assets/img/logo/food.png" height="30px" height="30px" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h3>FOODS</h3>
+                <p>There's alot of food that you can enjoy in Surabaya. These are some examples.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-3 mx-1 mt-3">
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/food/rujak.png" alt="Card image cap">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">Rujak Cingur</h5>
+                        <a href="food/index.html#rujak" class="btn btn-warning">CHECK IT OUT!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-1 mt-3">
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/food/lontong.png" alt="Card image cap">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">Lontong Balap</h5>
+                        <a href="food/index.html#lontong" class="btn btn-warning">CHECK IT OUT!</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 mx-1 mt-3">
+                <div class="card text-center">
+                    <img class="card-img-top" src="assets/img/food/tahu.png" alt="Card image cap">
+                    <div class="card-body bg-light">
+                        <h5 class="card-title">Tahu Campur</h5>
+                        <a href="food/index.html#tahu" class="btn btn-warning">CHECK IT OUT!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-2 text-center my-5">
+                <a href="food/index.html" class="btn btn-warning btn-sm px-3">MORE →</a>
+            </div>
+        </div>
+    </div>
+
+    <hr class="w-75">
+
+    <!-- Tourist -->
+    <div class="container-fluid text-center text-md-left mt-5 mb-3">
+        <div class="row">
+            <div class="col-md-12 mt-md-0 mt-3 d-flex justify-content-center">
+                <div class="col-md-0">
+                    <img src="assets/img/logo/map.png" height="30px" height="30px" alt="logo">
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-6 text-center">
+                <h3>TOURIST PLACES</h3>
+                <p>Not only food, Surabaya also has some great places that has a great view. You must visit these places.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-8 mx-1 mt-3">
+                <div id="carouselPlaces" class="carousel slide" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                        <li data-target="#carouselPlaces" data-slide-to="0" class="active"></li>
+                        <li data-target="#carouselPlaces" data-slide-to="1"></li>
+                        <li data-target="#carouselPlaces" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="3000">
+                            <img class="d-block rounded-lg" src="assets/img/tourist/1.png" alt="First slide">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img class="d-block rounded-lg" src="assets/img/tourist/2.png" alt="Second slide">
+                        </div>
+                        <div class="carousel-item" data-interval="3000">
+                            <img class="d-block rounded-lg" src="assets/img/tourist/3.png" alt="Third slide">
+                        </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselPlaces" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselPlaces" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row justify-content-center">
+            <div class="col-md-2 text-center my-5">
+                <a href="tourist/index.html" class="btn btn-warning btn-sm px-3">MORE →</a>
+            </div>
+        </div>
+    </div>
+
+    <hr>
+
+    <!-- Footer -->
+    <footer class="page-footer font-small teal pt-4">
+        <div class="container-fluid text-center text-md-left">
+            <div class="row">
+                <div class="col-md-6 mt-md-0 mt-3 d-flex justify-content-center">
+                    <div class="col-md-10">
+                        <img src="assets/img/logo/check.png" alt="check" width="30" height="30">
+                        <h3>KresnaAP</h3>
+                        <p>
+                            The best way to know everything about Surabaya.
+                        </p>
+                        <p>
+                            +62 812 3020 0808<br>
+                            kresnaadhipramana5758@gmail.com
+                        </p>
+
+                        <form action="">
+                            <div class="input-group py-3">
+                                <input type="text" class="form-control col-md-5" id="emailAddress" placeholder="Email@example.com">
+                                <div class="input-group-append">
+                                    <a href="#" class="input-group-text bg-dark" style="text-decoration: none;"><i class="far fa-envelope" style="color: white;"></i></a>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="col-md-6 mb-md-0 mb-3 d-flex justify-content-center">
+                    <div id="map"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3 mt-5 text-white" style="background-color: black;">
+            © 2020 Copyright:
+            <a href="index.html" class="text-white"> KresnaAP</a>
+        </div>
+    </footer>
+
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <!-- Maps -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"></script>
+    <script src="assets/js/map-settings.js"></script>
+    <script src="assets/js/typewriter.js"></script>
+</body>
+</html>
